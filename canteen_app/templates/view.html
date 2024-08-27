@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Product Details</h2>
+    <div class="card mb-3">
+        <img src="canteen_app/static/images{{ product.image }}" class="product-image" alt="{{ product.name }}'s image">
+        <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <!--<p class="card-text"><strong>Image:</strong> {{ product.image }}</p>-->
+            <p class="card-text"><strong>Price:</strong> {{ product.price }}</p>
+            <p class="card-text"><strong>Description:</strong> {{ product.description }}</p>
+            <p class="card-text"><strong>Quantity:</strong> {{ product.quantity }}</p>
+            <p class="card-text"><strong>Category:</strong> {{ product.category }}</p>
+            <p class="card-text"><strong>Brand:</strong> {{ product.brand }}</p>
+        </div>
+    </div>
+    <a href="/" class="btn btn-primary">Back to All Products</a>
+</div><br><br><br><br>
+{% endblock %}

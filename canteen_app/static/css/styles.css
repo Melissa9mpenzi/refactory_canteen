@@ -1,0 +1,126 @@
+body {
+    background-color: #efdbe5;
+    color: #793b51;
+  }
+  
+  .navbar {
+    background-color: #d195b1;
+  }
+  
+  .navbar .nav-link {
+    color: #793b51;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #aa5877;
+  }
+  
+  .footer {
+    background-color: #d195b1;
+    color: #793b51;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    border-top: 2px solid whitesmoke;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .btn-outline-success {
+    color: #793b51;
+    border-color: #aa5877;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #aa5877;
+    border-color: #aa5877;
+    color: #efdbe5;
+  }
+  
+  .form-control {
+    background-color: #efdbe5;
+    border-color: #aa5877;
+    color: #793b51;
+  }
+  
+  .form-control:focus {
+    background-color: #efdbe5;
+    border-color: #aa5877;
+    color: #793b51;
+    box-shadow: none;
+  }
+  
+  .d-flex .btn {
+    background-color: #aa5877;
+    color: #efdbe5;
+  }
+  
+  .d-flex .btn:hover {
+    background-color: #793b51;
+    color: #efdbe5;
+  }
+
+  .product-list-container {
+    margin: 20px auto;
+    width: 90%;
+  }
+  
+  .product-list-container h1 {
+    color: #793b51;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th, .product-table td {
+    border: 1px solid #d195b1;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .product-table th {
+    background-color: #aa5877;
+    color: #efdbe5;
+  }
+  
+  .product-table tbody tr:nth-child(even) {
+    background-color: #efdbe5;
+  }
+  
+  .product-table tbody tr:hover {
+    background-color: #d195b1;
+  }
+  
+  .product-table .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .product-table .btn-secondary {
+    background-color: #aa5877;
+    color: #efdbe5;
+    border: none;
+  }
+  
+  .product-table .btn-secondary:hover {
+    background-color: #793b51;
+    color: #efdbe5;
+  }
+  
+  .product-image {
+    width: 100px;
+    height: auto;
+  }
+  
+  

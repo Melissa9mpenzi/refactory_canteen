@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="student-list-container">
+    <h1>Search results</h1>
+    <hr>
+    <table class="student-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Category</th>
+                <th>Brand</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for each in allProducts %}
+            <tr>
+                <td>{{ each.id }}</td>
+                <td>{{ each.name }}</td>
+                <td><img src="/static/images/{{ each.image }}" alt="product image" class="product-image"></td>
+                <td>{{ each.price }}</td>
+                <td>{{ each.description }}</td>
+                <td>{{ each.quantity }}</td>
+                <td>{{ each.category }}</td>
+                <td>{{ each.brand }}</td>
+                <td class="actions">
+                    <a href="buy/{{ each.id }}" class="btn btn-secondary">Buy</a>
+                    <a href="view/" class="btn btn-secondary">View</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table><br>
+</div><br><br><br>
+{% endblock %}
